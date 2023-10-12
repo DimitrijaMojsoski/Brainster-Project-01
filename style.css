@@ -1,0 +1,263 @@
+body {
+  background-color: #eded0d;
+}
+/* navbar */
+.logo {
+  width: 50px;
+}
+.logo-font {
+  font-size: 10px;
+}
+.bg-yellow {
+  background-color: rgb(231, 231, 0);
+}
+.bg-red {
+  background-color: rgb(242, 2, 2);
+}
+.ml {
+  margin-left: 200px;
+}
+.wid {
+  width: 80%;
+}
+.menu-icon {
+  width: 50px;
+  padding: 0;
+}
+.border-none {
+  border: none;
+}
+.hidden {
+  display: none !important;
+}
+
+/* Default background color for the navbar */
+.navbar {
+  background-color: #eded0d; /* Yellow background */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.navbar-red {
+  background-color: #eded0d; /* Red color */
+}
+@media (max-width: 575px) {
+  li a {
+    color: white !important;
+    margin-bottom: 10px;
+  }
+  .fa-solid .fa-xmark {
+    display: block;
+  }
+  .collapse,
+  .navbar-collapse {
+    height: 100vh !important;
+    padding-top: 50px;
+  }
+  .navbar-red {
+    background-color: rgb(59, 58, 58) !important;
+  }
+  .background {
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(./images/brainster-comp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh !important;
+  }
+  .custom-select {
+    height: 7vh;
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(0, 0, 0);
+}
+
+/* navbar */
+/* baner */
+.baner {
+  position: relative;
+}
+.background {
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(./images/brainster-comp.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.flip-container {
+  perspective: 1000;
+  position: absolute;
+  right: 48px;
+  top: 48px;
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+/*speed of transition*/
+.flipper {
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-container,
+.front,
+.back {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  z-index: 2;
+}
+
+.back {
+  background: url("./images/download.png") no-repeat center;
+  transform: rotateY(180deg);
+}
+.carousel .carousel-caption {
+  top: 50%;
+  left: 50%;
+  bottom: unset;
+  right: unset;
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  left: 15px;
+  bottom: 15px;
+}
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+.border-bottom {
+  border-bottom: 2px solid white;
+}
+/* baner */
+/* cards */
+.filter-btn {
+  background-color: #343a40;
+}
+a.filter-btn:focus,
+button.filter-btn:focus {
+  background-color: red !important;
+  transition: 0.5s;
+  color: black !important ;
+}
+a.bg-dark:hover {
+  background-color: unset !important;
+  background-color: #eded0d;
+}
+.badge {
+  padding: 6px;
+  background-color: #eded0d;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.card {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
+
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.para-font {
+  font-size: 12px;
+  font-weight: bold;
+}
+.card-body {
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+.bold {
+  font-weight: 400;
+}
+.item {
+  display: none;
+}
+
+/* CSS to display items on larger screens */
+@media screen and (min-width: 768px) {
+  .item {
+    display: block;
+  }
+}
+
+/* cards */
+/* forms */
+:placeholder-shown {
+  font-style: italic;
+}
+.custom-select {
+  font-weight: bold;
+}
+
+.py-10 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.custom-select {
+  background-image: url(./images/down.png);
+  background-size: contain;
+  height: 50px;
+}
+.btn-heig {
+  height: 50px;
+  font-size: 18px;
+}
